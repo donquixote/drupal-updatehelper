@@ -2,4 +2,6 @@ name = Update Helper
 description = Shows a UI with suggested drush and git commands for module update.
 core = 7.x
 
+configure = admin/reports/updates/drush
+
 dependencies[] = update
