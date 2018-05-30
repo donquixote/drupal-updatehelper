@@ -1,0 +1,15 @@
+<?php
+
+function updatehelper_menu() {
+  $items = [];
+  $items['admin/reports/updates/drush'] = [
+    /* @see _updatehelper_drush_page() */
+    'page callback' => '_updatehelper_drush_page',
+    'access arguments' => array('administer site configuration'),
+    'weight' => 12,
+    'title' => 'Drush',
+    'type' => MENU_LOCAL_TASK,
+    'file' => 'updatehelper.page.drush.inc',
+  ];
+  return $items;
+}
